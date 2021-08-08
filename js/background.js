@@ -1,9 +1,22 @@
 const images = ["0.jpeg", "1.jpeg", "2.jpeg"];
+const body = document.querySelector("body");
 
-const chosenImage = images[Math.floor(Math.random() * images.length)];
+function paintImage(num) {
+  const bgImage = new Image();
+  bgImage.src = `img/${num}`;
+  bgImage.classList.add("bgImage");
+  body.prepend(bgImage);
+  //   body.style.backgroundImage = `url(${bgImage})`;
+}
 
-const bgImage = document.createElement("img");
+function getRandom() {
+  const chosenImage = images[Math.floor(Math.random() * images.length)];
+  return chosenImage;
+}
 
-bgImage.src = `img/${chosenImage}`;
+function init() {
+  const RanNum = getRandom();
+  paintImage(RanNum);
+}
 
-document.body.appendChild(bgImage);
+init();
