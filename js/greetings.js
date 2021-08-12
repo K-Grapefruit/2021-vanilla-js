@@ -2,7 +2,7 @@ const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
 const greeting = document.querySelector("#greeting");
 const todoform = document.querySelector("#todo-form");
-const todoform1 = document.getElementById("#todo-form");
+
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
 
@@ -22,7 +22,7 @@ function paintGreetings(username) {
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);
 console.log(todoform);
-console.log(todoform1);
+
 if (savedUsername === null) {
   loginForm.classList.remove(HIDDEN_CLASSNAME);
   todoform.classList.add(HIDDEN_CLASSNAME);

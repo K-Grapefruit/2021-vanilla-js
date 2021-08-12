@@ -2,6 +2,7 @@ const images = ["0.jpeg", "1.jpeg", "2.jpeg"];
 const body = document.querySelector("body");
 
 function paintImage(num) {
+  //image객체가 생성되어 속성들을 추가할수 있음
   const bgImage = new Image();
   bgImage.src = `img/${num}`;
   bgImage.classList.add("bgImage");

@@ -32,19 +32,23 @@ function paintToDo(newTodo) {
 
 function handleToDoSubmit(event) {
   event.preventDefault();
+  const parsedToDos = JSON.parse(savedToDos);
   const newTodo = toDoInput.value;
   toDoInput.value = "";
-  const newTodoObj = {
-    text: newTodo,
-    id: Date.now(),
-  };
-  toDos.push(newTodoObj);
-  paintToDo(newTodoObj);
-  saveToDos();
+  if (toDos.length >= 7) {
+    alert("7개 까지만 작성 가능합니다.");
+  } else {
+    const newTodoObj = {
+      text: newTodo,
+      id: Date.now(),
+    };
+    toDos.push(newTodoObj);
+    paintToDo(newTodoObj);
+    saveToDos();
+  }
 }
 
 toDoForm.addEventListener("submit", handleToDoSubmit);
-
 const savedToDos = localStorage.getItem(TODOS_KEY);
 
 if (savedToDos !== null) {

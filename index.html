@@ -17,34 +17,35 @@
         <span></span>
       </div>
     </div>
+    <div class="center_frame">
+      <div class="big_frame">
+        <div>
+          <h2 id="clock">00:00:00</h2>
+          <form class="hidden" id="login-form">
+            <input
+              required
+              maxlength="15"
+              type="text"
+              placeholder="What is your name?"
+            />
+            <input type="submit" value="Log In" />
+          </form>
+        </div>
 
-    <div class="big_frame">
-      <div>
-        <h2 id="clock">00:00:00</h2>
-        <form class="hidden" id="login-form">
-          <input
-            required
-            maxlength="15"
-            type="text"
-            placeholder="What is your name?"
-          />
-          <input type="submit" value="Log In" />
-        </form>
+        <div>
+          <h1 class="hidden" id="greeting"></h1>
+          <form id="todo-form">
+            <input
+              type="text"
+              placeholder="Write a To Do and Press Enter"
+              required
+            />
+          </form>
+        </div>
       </div>
-
-      <div>
-        <h1 class="hidden" id="greeting"></h1>
-        <form id="todo-form">
-          <input
-            type="text"
-            placeholder="Write a To Do and Press Enter"
-            required
-          />
-        </form>
+      <div class="todo_frame">
+        <ul id="todo-list"></ul>
       </div>
-    </div>
-    <div class="todo_frame">
-      <ul id="todo-list"></ul>
     </div>
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
