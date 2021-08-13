@@ -12,6 +12,7 @@ body {
   align-items: center;
   position: relative;
   overflow-y: hidden;
+  font: small-caps bold 24px/1 sans-serif;
 }
 
 .top_frame {
@@ -21,6 +22,7 @@ body {
   display: flex;
   justify-content: space-around;
 }
+
 .top_frame #quote,
 #weather span {
   font-weight: 800;
@@ -32,6 +34,7 @@ body img {
   background-size: cover;
   z-index: -1;
   top: 0;
+  opacity: 0.8;
 }
 
 .big_frame {
@@ -45,10 +48,14 @@ body img {
   text-align: center;
   width: 50%;
 }
-
+#today {
+  font-weight: bold;
+  font-size: 30px;
+  margin: 0;
+}
 #clock {
   font-weight: bold;
-  font-size: 100px;
+  font-size: 120px;
   margin-bottom: 10px;
 }
 
@@ -103,7 +110,8 @@ ul li span {
 }
 
 #todo-list li {
-  font-size: 25px;
+  font-size: 30px;
+  font-weight: 800;
 }
 
 #todo-list button {
@@ -126,4 +134,11 @@ ul li span {
   width: 100%;
   display: flex;
   justify-content: space-around;
+}
+
+#date {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 40%;
 }
