@@ -57,8 +57,18 @@ body img {
   font-weight: bold;
   font-size: 120px;
   margin-bottom: 10px;
+  animation-duration: 4s;
+  animation-name: moving;
 }
 
+@keyframes moving {
+  from {
+    margin-right: 100%;
+  }
+  to {
+    margin-right: 0%;
+  }
+}
 .todo_frame {
   /* position: absolute;
   right: 20%;
@@ -66,6 +76,9 @@ body img {
   */
   text-align: center;
   width: 30%;
+  background-color: black;
+  opacity: 0.6;
+  border-radius: 20%;
 }
 
 #greeting {
@@ -85,8 +98,11 @@ ul li {
 ul li span {
   border-bottom: 3px solid rgb(9, 3, 20);
   font-family: fantasy;
+  color: rgb(8, 224, 240);
 }
-
+ul li span:hover {
+  font-size: 40px;
+}
 #todo-form input {
   width: 250px;
   height: 80px;
