@@ -142,9 +142,15 @@ ul li span:hover {
 }
 
 #login-form input {
-  height: 40px;
+  height: 60px;
   background-color: transparent;
   border: none;
+  text-align: center;
+}
+#login-form input::placeholder {
+  color: black;
+  font-weight: 500;
+  font-size: 19px;
 }
 
 .center_frame_width {
