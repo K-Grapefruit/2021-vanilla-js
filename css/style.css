@@ -69,6 +69,7 @@ body img {
     margin-right: 0%;
   }
 }
+
 .todo_frame {
   /* position: absolute;
   right: 20%;
@@ -88,7 +89,6 @@ body img {
 
 ul {
   list-style: none;
-  padding: 0;
 }
 
 ul li {
@@ -102,6 +102,7 @@ ul li span {
 }
 ul li span:hover {
   font-size: 40px;
+  color: rgb(226, 14, 191);
 }
 #todo-form input {
   width: 250px;
@@ -144,6 +145,11 @@ ul li span:hover {
   height: 40px;
   background-color: transparent;
   border: none;
+}
+
+.center_frame_width {
+  display: flex;
+  justify-content: space-around;
 }
 
 .center_frame {
